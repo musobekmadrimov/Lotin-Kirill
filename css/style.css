@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed); */
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+}
+
+body {
+          width: 100vw;
+          height: 100vh;
+          background: #030321;
+          padding: 15px;
+          position: relative;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
+
+/* html, body{
+  height: 100%;
+  font-weight: 800;
+} */
+
+/* body{
+  background: #030321;
+  font-family: Arial;
+} */
+
+svg {
+          /* display: block; */
+          font: 90px "Montserrat";
+          width: 70%;
+          height: 15%;
+          margin: 0 auto;
+          position: absolute;
+          top: 5px;
+          left: 15%;
+}
+
+.text-copy {
+          fill: none;
+          stroke: white;
+          stroke-dasharray: 6% 29%;
+          stroke-width: 5px;
+          stroke-dashoffset: 0%;
+          animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+          stroke: #09ff84;
+          animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+          stroke: #c70355;
+          animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+          stroke: #bd0034;
+          animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+          stroke: #bd0034;
+          animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+          stroke: #fdb731;
+          animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+          100% {
+                    stroke-dashoffset: -35%;
+          }
+}
+
+.container {
+          width: 80%;
+          height: 10%;
+          margin: 0 auto;
+}
+
+/* .mainHeading{
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.8);
+} */
+
+.full-container {
+          width: 100%;
+          height: 60%;
+          /* border: 2px solid; */
+}
+
+.heading {
+          width: 100%;
+          height: 10%;
+          text-align: center;
+}
+
+.wrapperInputAndOutput {
+          width: 100%;
+          height: 100%;
+          background-color: #ffffff;
+          border-radius: 10px;
+          box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+          padding-bottom: 10px
+}
+
+#input {
+          width: 50%;
+          height: 100%;
+          float: left;
+          border-right: 3px dashed;
+          padding: 10px;
+}
+
+#formLotin {
+          width: 100%;
+          height: 90%;
+}
+
+#formKirill {
+          width: 100%;
+          height: 90%;
+}
+
+#output {
+          width: 50%;
+          height: 100%;
+          float: left;
+          padding: 10px;
+}
+
+#inputLotin {
+          width: 100%;
+          height: 80%;
+          outline: none;
+          border-radius: 30px;
+          padding: 30px;
+          font-size: 20px;
+}
+
+#outputKiril {
+          width: 100%;
+          height: 80%;
+          outline: none;
+          border-radius: 30px;
+          padding: 30px;
+          font-size: 20px;
+}
+
+textarea {
+          resize: none;
+}
+
+::placeholder {
+          text-align: center;
+}
+
+::selection {
+          background-color: crimson;
+          color: #fff;
+}
+
+.whoCoded {
+          width: 100%;
+}
+
+.whoCoded p {
+          position: relative;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          font-size: 2em;
+          letter-spacing: 4px;
+          overflow: hidden;
+          background: linear-gradient(90deg, #000, #fff, #000);
+          background-repeat: no-repeat;
+          background-size: 80%;
+          animation: animate 3s linear infinite;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+          0% {
+                    background-position: -500%;
+          }
+          100% {
+                    background-position: 500%;
+          }
+}
+
+@media screen and (max-width: 766px) {
+          body {
+                    width: 100vw;
+                    height: 150vh;
+                    /* background: linear-gradient(to bottom, rgb(0, 255, 157), rgb(92, 255, 192)); */
+                    background: #030321;
+                    padding: 15px;
+          }
+
+          .container {
+                    width: 100%;
+                    height: 10%;
+                    margin: 0px auto 0px auto !important;
+          }
+
+          svg {
+                    font: 50px "Montserrat";
+                    width: 70%;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: -50px;
+                    left: 15%;
+          }
+
+          .text-copy {
+                    fill: none;
+                    stroke: white;
+                    stroke-dasharray: 6% 29%;
+                    stroke-width: 2px;
+                    stroke-dashoffset: 0%;
+                    animation: stroke-offset 5.5s infinite linear;
+          }
+
+          #liquid {
+                    width: 200px;
+                    height: 20px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 80px !important;
+                    left: 25% !important;
+                    background-color: #02ffea;
+                    border-radius: 5px;
+          }
+
+          .full-container {
+                    width: 100%;
+                    height: 90%;
+                    /* border: 2px solid; */
+          }
+
+          .heading {
+                    width: 100%;
+                    height: 10%;
+                    text-align: center;
+                    margin-bottom: 20px !important;
+          }
+
+          .wrapperInputAndOutput {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+          }
+
+          #input {
+                    width: 100%;
+                    height: 50%;
+                    border-right: none;
+                    border-bottom: 3px dashed;
+                    padding: 10px;
+          }
+
+          #output {
+                    width: 100%;
+                    height: 50%;
+                    padding: 10px;
+          }
+
+          #formLotin {
+                    width: 100%;
+                    height: 90%;
+          }
+
+          #formKirill {
+                    width: 100%;
+                    height: 90%;
+          }
+
+          #inputLotin {
+                    width: 100%;
+                    height: 80%;
+                    outline: none;
+                    border-radius: 30px;
+                    padding: 30px;
+                    font-size: 20px;
+          }
+
+          #outputKiril {
+                    width: 100%;
+                    height: 80%;
+                    outline: none;
+                    border-radius: 30px;
+                    padding: 30px;
+                    font-size: 20px;
+          }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+          body {
+                    width: 100vw;
+                    height: 100vh;
+                    /* background: linear-gradient(to bottom, rgb(0, 255, 157), rgb(92, 255, 192)); */
+                    background: #030321;
+                    padding: 15px;
+          }
+
+          .container {
+                    width: 100%;
+                    height: 10%;
+                    margin: 0px auto 0px auto !important;
+          }
+
+          svg {
+                    font: 90px "Montserrat";
+                    width: 70%;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: -50px;
+                    left: 15%;
+          }
+
+          .text-copy {
+                    fill: none;
+                    stroke: white;
+                    stroke-dasharray: 6% 29%;
+                    stroke-width: 4px;
+                    stroke-dashoffset: 0%;
+                    animation: stroke-offset 5.5s infinite linear;
+          }
+
+          .full-container {
+                    width: 100%;
+                    height: 65%;
+                    /* border: 2px solid; */
+          }
+
+          .heading {
+                    width: 100%;
+                    height: 10%;
+                    text-align: center;
+                    margin-bottom: 20px !important;
+          }
+
+          .wrapperInputAndOutput {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+          }
+
+          #input {
+                    width: 50%;
+                    height: 100%;
+                    border-right: 3px dashed;
+                    padding: 10px;
+          }
+
+          #output {
+                    width: 50%;
+                    height: 100%;
+                    padding: 10px;
+          }
+
+          #formLotin {
+                    width: 100%;
+                    height: 90%;
+          }
+
+          #formKirill {
+                    width: 100%;
+                    height: 90%;
+          }
+
+          #inputLotin {
+                    width: 100%;
+                    height: 80%;
+                    outline: none;
+                    border-radius: 30px;
+                    padding: 30px;
+                    font-size: 20px;
+          }
+
+          #outputKiril {
+                    width: 100%;
+                    height: 80%;
+                    outline: none;
+                    border-radius: 30px;
+                    padding: 30px;
+                    font-size: 20px;
+          }
+}
