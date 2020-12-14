@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-/* @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rajdhani:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
           margin: 0;
@@ -43,7 +44,7 @@ svg {
           fill: none;
           stroke: white;
           stroke-dasharray: 6% 29%;
-          stroke-width: 5px;
+          stroke-width: 3px;
           stroke-dashoffset: 0%;
           animation: stroke-offset 5.5s infinite linear;
 }
@@ -59,7 +60,7 @@ svg {
 }
 
 .text-copy:nth-child(3) {
-          stroke: #bd0034;
+          stroke: #00ffb3;
           animation-delay: -3s;
 }
 
@@ -107,7 +108,7 @@ svg {
           background-color: #ffffff;
           border-radius: 10px;
           box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
-          padding-bottom: 10px
+          
 }
 
 #input {
@@ -115,7 +116,8 @@ svg {
           height: 100%;
           float: left;
           border-right: 3px dashed;
-          padding: 10px;
+          padding-bottom: 10px;
+          padding-right: 10px;     
 }
 
 #formLotin {
@@ -132,7 +134,8 @@ svg {
           width: 50%;
           height: 100%;
           float: left;
-          padding: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;     
 }
 
 #inputLotin {
@@ -140,7 +143,7 @@ svg {
           height: 80%;
           outline: none;
           border-radius: 30px;
-          padding: 30px;
+          padding: 20px;
           font-size: 20px;
 }
 
@@ -149,7 +152,7 @@ svg {
           height: 80%;
           outline: none;
           border-radius: 30px;
-          padding: 30px;
+          padding: 20px;
           font-size: 20px;
 }
 
@@ -172,9 +175,11 @@ textarea {
 
 .whoCoded p {
           position: relative;
-          font-family: sans-serif;
+          /* font-family: 'Poppins', sans-serif; */
+          font-family: 'Rajdhani', sans-serif;
           text-transform: uppercase;
           font-size: 2em;
+          font-weight: 500;
           letter-spacing: 4px;
           overflow: hidden;
           background: linear-gradient(90deg, #000, #fff, #000);
@@ -183,6 +188,13 @@ textarea {
           animation: animate 3s linear infinite;
           -webkit-background-clip: text;
           -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.name{
+  font-family: 'Great Vibes', cursive;
+  text-transform: none;
+
+  
 }
 @keyframes animate {
           0% {
